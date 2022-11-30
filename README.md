@@ -14,13 +14,19 @@ Install dependencies : npm install express express-rate-limit mongoose memory-ca
 Install and use nodemon : npm install --save-dev nodemon
 
 In the package.json file, add "start": ""nodemon index.js under scripts
-  "scripts": {
+  "scripts": 
+  
+  {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
+  
 In index.js replace <PASSWORD> with the password provided in the submission file
+	
 Run the file using the command : npm start
+	
 Test the API on http://localhost:3000/
+	
 API
 Authentication
 
@@ -31,6 +37,7 @@ Response:
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp_<DUMMY_TOKEN>_jp7ImlkIjoxLFtZSI6InRlc3RfdXNlciJ9LCasdfsdfjIGKAGFkgDFGADFgADFGLJHGdfHG"
 }
+	
 Under Headers, add Authorization Key as 'Bearer <generated_token>'
 
 Inbound
@@ -47,6 +54,7 @@ Body Parameter:
 Response for no authorization:
 
 Forbidden
+	
 Response for missing parameter:
 
 {
