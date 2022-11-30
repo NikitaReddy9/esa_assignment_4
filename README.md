@@ -1,5 +1,3 @@
-# CS 474 Module 4 SMS API Assignment
-
 ## How to use
 
 1. Clone the repository.
@@ -19,7 +17,6 @@
 9. Test the API on http://localhost:3000/
 
 ## API
-***Authentication***
 
 **Request URL**: /login
 
