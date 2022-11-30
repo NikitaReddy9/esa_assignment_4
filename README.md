@@ -3,17 +3,17 @@
 
 How to use
 
-Clone the repository.
+1. Clone the repository.
 
-Navigate to the directory.
+2. Navigate to the directory.
 
-Run command : npm init
+3. Run command : npm init
 
-Install dependencies : npm install express express-rate-limit mongoose memory-cache jsonwebtoken --save
+4. Install dependencies : npm install express express-rate-limit mongoose memory-cache jsonwebtoken --save
 
-Install and use nodemon : npm install --save-dev nodemon
+5. Install and use nodemon : npm install --save-dev nodemon
 
-In the package.json file, add "start": ""nodemon index.js under scripts
+6. In the package.json file, add "start": ""nodemon index.js under scripts
   "scripts": 
   
   {
@@ -21,11 +21,12 @@ In the package.json file, add "start": ""nodemon index.js under scripts
     "start": "nodemon index.js"
   },
   
-In index.js replace <PASSWORD> with the password provided in the submission file
+7. In index.js replace <PASSWORD> with the password provided in the submission file
 	
-Run the file using the command : npm start
+8. Run the file using the command : npm start
 	
-Test the API on http://localhost:3000/
+9. Test the API on http://localhost:3000/
+
 	
 API
 Authentication
@@ -51,6 +52,7 @@ Body Parameter:
 	"to" : "1234567890",
 	"text" : "Hello darkness my old friend"
 }
+	
 Response for no authorization:
 
 Forbidden
@@ -61,21 +63,25 @@ Response for missing parameter:
   “message”: “”,
   “error”: “parameter <parameter_name> is missing”
 }
+	
 Response for invalid parameter:
 
 {
   “message”: “”,
   “error”: “parameter <parameter_name> is invalid”
 }
+	
 Response for any unexpected error:
 
 {
   “message”: “”,
   “error”: “unknown failure”
 }
+	
 When text STOP or STOP\n or STOP\r or STOP\r\n:
 
 'from' and 'to' pair is cached 
+	
 Response for valid parameters:
 
 {
@@ -97,33 +103,39 @@ Body Parameter:
 Response for no authorization:
 
 Forbidden
+	
 Response for missing parameter:
 
 {
   “message”: “”,
   “error”: “parameter <parameter_name> is missing”
 }
+	
 Response for invalid parameter:
 
 {
   “message”: “”,
   “error”: “parameter <parameter_name> is invalid”
 }
+	
 Response for any unexpected error:
 
 {
   “message”: “”,
   “error”: “unknown failure”
 }
+	
 Response if the pair ‘to’ and ‘from’ matches the cached pair:
 
 {
   “message”: “”,
   “error”: “sms from <from> and to <to> blocked by STOP request”
 }
+	
 Response if 50 requests limit reached in last 1 hour:
 
 Limit reached
+	
 Response for valid parameters:
 
 {
