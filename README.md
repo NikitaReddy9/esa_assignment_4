@@ -2,11 +2,17 @@
 
 
 How to use
+
 Clone the repository.
+
 Navigate to the directory.
+
 Run command : npm init
+
 Install dependencies : npm install express express-rate-limit mongoose memory-cache jsonwebtoken --save
+
 Install and use nodemon : npm install --save-dev nodemon
+
 In the package.json file, add "start": ""nodemon index.js under scripts
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
